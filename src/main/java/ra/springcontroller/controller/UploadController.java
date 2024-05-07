@@ -26,7 +26,7 @@ public class UploadController {
     @PostMapping("/upload")
     public String doUpload(@RequestParam MultipartFile file, Model model) throws IOException {
         // xử lí file
-        String uploadPath = servletContext.getRealPath("/uploads");
+        String uploadPath = "C:\\Users\\AD\\Desktop\\spring-controller\\src\\main\\webapp\\uploads";
         File uploadFolder = new File(uploadPath);
         if (!uploadFolder.exists()){
             uploadFolder.mkdir(); // tạo mới thư mục trên server

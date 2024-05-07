@@ -15,6 +15,6 @@
     <input type="file" name="file">
     <input type="submit" value="Send">
 </form>
-<img src="${url}" alt="" width="300">
+<video src="${url}" controls width="500"></video>
 </body>
 </html>

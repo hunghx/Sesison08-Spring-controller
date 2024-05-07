@@ -15,6 +15,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 @ComponentScan(basePackages = "ra.springcontroller") // @Component , @Controller, @Service, @Repository
 public class AppConfig implements WebMvcConfigurer {
+    private static final String uploadPath ="C:\\Users\\AD\\Desktop\\spring-controller\\src\\main\\webapp\\uploads\\";
     @Bean
     public ViewResolver resolver(){
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
@@ -35,6 +36,6 @@ public class AppConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/uploads/**")
-                .addResourceLocations("/uploads/");
+                .addResourceLocations("file:"+uploadPath);
     }
 }
