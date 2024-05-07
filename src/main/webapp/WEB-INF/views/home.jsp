@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Hello ${name}</h1>
-<form action="/admin/contact" method="post">
+<form action="<%=request.getContextPath()%>/add" method="post">
     <input type="text" name="name"><br>
     <input type="text" name="age"><br>
     <input type="text" name="des"><br>

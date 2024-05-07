@@ -11,8 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-<li>${name}</li>
-<li>${age}</li>
-<li>${des}</li>
+<li>${person.name}</li>
+<li>${person.age}</li>
+<li>${person.des}</li>
 </body>
 </html>
