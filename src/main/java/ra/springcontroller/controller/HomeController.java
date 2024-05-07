@@ -42,4 +42,6 @@ public class HomeController {
        return "redirect:/helo/hoho?id="+id;
     }
 
+     // yêu câu người dùng nhâ vào 3 cạnh của tam giac => tính và hiển thị diện tích tam giác
+
 }

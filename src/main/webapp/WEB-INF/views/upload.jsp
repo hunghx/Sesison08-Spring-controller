@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: AD
   Date: 5/7/2024
-  Time: 7:25 PM
+  Time: 9:13 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,13 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Hello ${name}</h1>
-<a href="/math">Tính diện tích tam giác</a>
-<form action="<%=request.getContextPath()%>/add" method="post">
-    <input type="text" name="name"><br>
-    <input type="text" name="age"><br>
-    <input type="text" name="des"><br>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
     <input type="submit" value="Send">
 </form>
+<img src="${url}" alt="" width="300">
 </body>
 </html>
